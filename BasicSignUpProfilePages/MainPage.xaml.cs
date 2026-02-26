@@ -26,7 +26,7 @@
                 return;
             }
 
-            await Shell.Current.GoToAsync(nameof(ProfilePage));
+            await Shell.Current.GoToAsync($"{nameof(ProfilePage)}?username={txtUsername.Text}&email={txtEmail.Text}");
         }
     }
 }
