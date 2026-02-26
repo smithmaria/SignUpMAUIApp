@@ -7,8 +7,12 @@
     Title="BasicSignUpProfilePages">
 
     <ShellContent
-        Title="Home"
+        Title="Sign Up"
         ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+        Route="SignUp" />
+    <ShellContent 
+        Title="Profile"
+        ContentTemplate="{DataTemplate local:ProfilePage}"
+        Route="ProfilePage"/>
 
 </Shell>

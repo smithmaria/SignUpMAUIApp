@@ -7,7 +7,7 @@
             InitializeComponent();
         }
 
-        private void btnSignUp_Clicked(object sender, EventArgs e)
+        private async void btnSignUp_Clicked(object sender, EventArgs e)
         {
             lblErrorMessage.Text = "";
 
@@ -23,6 +23,8 @@
             {
                 lblErrorMessage.Text = "Passwords must match.";
             }
+
+            await Shell.Current.GoToAsync(nameof(ProfilePage));
         }
     }
 }
