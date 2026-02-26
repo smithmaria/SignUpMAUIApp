@@ -22,10 +22,12 @@
             <Entry
                 x:Name="txtPassword"
                 Placeholder="Password"
+                IsPassword="True"
             />
             <Entry
                 x:Name="txtConfirmPassword"
                 Placeholder="Confirm Password"
+                IsPassword="True"
             />
             <Label 
                 x:Name="lblErrorMessage"
@@ -33,6 +35,7 @@
             />
             <Button
                 x:Name="btnSignUp"
+                Clicked="btnSignUp_Clicked"
                 Text="Sign Up" 
                 HorizontalOptions="Fill" />
         </VerticalStackLayout>
