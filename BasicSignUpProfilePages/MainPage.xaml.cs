@@ -17,11 +17,13 @@
                 || string.IsNullOrWhiteSpace(txtConfirmPassword.Text))
             {
                 lblErrorMessage.Text = "All fields must be filled.";
+                return;
             }
 
             if (txtPassword.Text != txtConfirmPassword.Text)
             {
                 lblErrorMessage.Text = "Passwords must match.";
+                return;
             }
 
             await Shell.Current.GoToAsync(nameof(ProfilePage));
